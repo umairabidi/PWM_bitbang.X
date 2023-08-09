@@ -1,0 +1,329 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"292 D:\Software\Microchip\XC8\pic\include\../include/proc/pic16f630.h
+[s S17 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S17 . RAIF INTF T0IF RAIE INTE T0IE PEIE GIE ]
+"302
+[s S18 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S18 . . TMR0IF . TMR0IE ]
+"291
+[u S16 `S17 1 `S18 1 ]
+[n S16 . . . ]
+"309
+[v _INTCONbits `VS16 ~T0 @X0 0 e@11 ]
+"59
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"222
+[s S13 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S13 . RC0 RC1 RC2 RC3 RC4 RC5 ]
+"221
+[u S12 `S13 1 ]
+[n S12 . . ]
+"231
+[v _PORTCbits `VS12 ~T0 @X0 0 e@7 ]
+"172
+[s S11 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S11 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"171
+[u S10 `S11 1 ]
+[n S10 . . ]
+"181
+[v _PORTAbits `VS10 ~T0 @X0 0 e@5 ]
+[p mainexit ]
+"47 PWM_bitbang.c
+[; ;PWM_bitbang.c: 47: void PWM_setup();
+[v _PWM_setup `(v ~T0 @X0 0 e? ]
+"48
+[; ;PWM_bitbang.c: 48: void rotary_setup();
+[v _rotary_setup `(v ~T0 @X0 0 e? ]
+"684 D:\Software\Microchip\XC8\pic\include\../include/proc/pic16f630.h
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 ]
+"683
+[u S33 `S34 1 ]
+[n S33 . . ]
+"693
+[v _TRISCbits `VS33 ~T0 @X0 0 e@135 ]
+"557
+[s S29 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S29 . PS PSA T0SE T0CS INTEDG nRAPU ]
+"565
+[s S30 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S30 . PS0 PS1 PS2 . nGPPU ]
+"556
+[u S28 `S29 1 `S30 1 ]
+[n S28 . . . ]
+"573
+[v _OPTION_REGbits `VS28 ~T0 @X0 0 e@129 ]
+"634
+[s S32 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S32 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 ]
+"633
+[u S31 `S32 1 ]
+[n S31 . . ]
+"643
+[v _TRISAbits `VS31 ~T0 @X0 0 e@133 ]
+"963
+[s S49 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S49 . IOCA0 IOCA1 IOCA2 IOCA3 IOCA4 IOCA5 ]
+"962
+[u S48 `S49 1 ]
+[n S48 . . ]
+"972
+[v _IOCAbits `VS48 ~T0 @X0 0 e@150 ]
+"54 D:\Software\Microchip\XC8\pic\include\../include/proc/pic16f630.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"218
+[; <" PORTC equ 07h ;# ">
+"268
+[; <" PCLATH equ 0Ah ;# ">
+"288
+[; <" INTCON equ 0Bh ;# ">
+"366
+[; <" PIR1 equ 0Ch ;# ">
+"408
+[; <" TMR1 equ 0Eh ;# ">
+"415
+[; <" TMR1L equ 0Eh ;# ">
+"422
+[; <" TMR1H equ 0Fh ;# ">
+"429
+[; <" T1CON equ 010h ;# ">
+"494
+[; <" CMCON equ 019h ;# ">
+"553
+[; <" OPTION_REG equ 081h ;# ">
+"630
+[; <" TRISA equ 085h ;# ">
+"680
+[; <" TRISC equ 087h ;# ">
+"730
+[; <" PIE1 equ 08Ch ;# ">
+"772
+[; <" PCON equ 08Eh ;# ">
+"806
+[; <" OSCCAL equ 090h ;# ">
+"866
+[; <" WPUA equ 095h ;# ">
+"871
+[; <" WPU equ 095h ;# ">
+"954
+[; <" IOCA equ 096h ;# ">
+"959
+[; <" IOC equ 096h ;# ">
+"1052
+[; <" VRCON equ 099h ;# ">
+"1112
+[; <" EEDAT equ 09Ah ;# ">
+"1117
+[; <" EEDATA equ 09Ah ;# ">
+"1150
+[; <" EEADR equ 09Bh ;# ">
+"1157
+[; <" EECON1 equ 09Ch ;# ">
+"1195
+[; <" EECON2 equ 09Dh ;# ">
+"22 PWM_bitbang.c
+[p x FOSC  =  INTRCIO    ]
+"23
+[p x WDTE  =  OFF        ]
+"24
+[p x PWRTE  =  OFF       ]
+"25
+[p x MCLRE  =  ON        ]
+"26
+[p x BOREN  =  OFF       ]
+"27
+[p x CP  =  OFF          ]
+"28
+[p x CPD  =  OFF         ]
+"41
+[; ;PWM_bitbang.c: 41: uint8_t PWMCounter;
+[v _PWMCounter `uc ~T0 @X0 1 e ]
+"42
+[; ;PWM_bitbang.c: 42: uint8_t th_h, th_l;
+[v _th_h `uc ~T0 @X0 1 e ]
+[v _th_l `uc ~T0 @X0 1 e ]
+"43
+[; ;PWM_bitbang.c: 43: volatile __bit PWMState;
+[v _PWMState `Vb ~T0 @X0 1 e ]
+"44
+[; ;PWM_bitbang.c: 44: volatile __bit enc_F;
+[v _enc_F `Vb ~T0 @X0 1 e ]
+"45
+[; ;PWM_bitbang.c: 45: volatile __bit dir;
+[v _dir `Vb ~T0 @X0 1 e ]
+[v $root$_isr `(v ~T0 @X0 0 e ]
+"51
+[; ;PWM_bitbang.c: 51: void __attribute__((picinterrupt(("")))) isr(void){
+[v _isr `(v ~T1 @X0 1 ef ]
+{
+[e :U _isr ]
+[f ]
+"52
+[; ;PWM_bitbang.c: 52:     if (INTCONbits.T0IF){
+[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 62  ]
+{
+"53
+[; ;PWM_bitbang.c: 53:         INTCONbits.T0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"54
+[; ;PWM_bitbang.c: 54:         TMR0 = PWMState ? 255 - th_l : 255 - th_h;
+[e = _TMR0 -> ? _PWMState : - -> 255 `i -> _th_l `i - -> 255 `i -> _th_h `i `uc ]
+"55
+[; ;PWM_bitbang.c: 55:         PWMState = PWMState^1;
+[e = _PWMState -> ^ -> _PWMState `i -> 1 `i `b ]
+"56
+[; ;PWM_bitbang.c: 56:         PORTCbits.RC3 = PWMState;
+[e = . . _PORTCbits 0 3 -> _PWMState `uc ]
+"57
+[; ;PWM_bitbang.c: 57:     }
+}
+[e :U 62 ]
+"58
+[; ;PWM_bitbang.c: 58:     if (INTCONbits.RAIF){
+[e $ ! != -> . . _INTCONbits 0 0 `i -> 0 `i 63  ]
+{
+"59
+[; ;PWM_bitbang.c: 59:         INTCONbits.RAIF = 0;
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"60
+[; ;PWM_bitbang.c: 60:         enc_F = 1;
+[e = _enc_F -> -> 1 `i `b ]
+"61
+[; ;PWM_bitbang.c: 61:         dir = (PORTAbits.RA2 + PORTCbits.RC0)%2;
+[e = _dir -> % + -> . . _PORTAbits 0 2 `i -> . . _PORTCbits 0 0 `i -> 2 `i `b ]
+"62
+[; ;PWM_bitbang.c: 62:     }
+}
+[e :U 63 ]
+"63
+[; ;PWM_bitbang.c: 63: }
+[e :UE 61 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"65
+[; ;PWM_bitbang.c: 65: int main(int argc, char** argv) {
+[v _main `(i ~T0 @X0 1 ef2`i`**uc ]
+{
+[e :U _main ]
+[v _argc `i ~T0 @X0 1 r1 ]
+[v _argv `**uc ~T0 @X0 1 r2 ]
+[f ]
+"66
+[; ;PWM_bitbang.c: 66:     PWM_setup();
+[e ( _PWM_setup ..  ]
+"67
+[; ;PWM_bitbang.c: 67:     rotary_setup();
+[e ( _rotary_setup ..  ]
+"69
+[; ;PWM_bitbang.c: 69:     enc_F = 0;
+[e = _enc_F -> -> 0 `i `b ]
+"70
+[; ;PWM_bitbang.c: 70:     th_h = 255;
+[e = _th_h -> -> 255 `i `uc ]
+"71
+[; ;PWM_bitbang.c: 71:     th_l = 0;
+[e = _th_l -> -> 0 `i `uc ]
+"73
+[; ;PWM_bitbang.c: 73:     TRISCbits.TRISC3 = 0;
+[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
+"74
+[; ;PWM_bitbang.c: 74:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"76
+[; ;PWM_bitbang.c: 76:     while(1){
+[e :U 66 ]
+{
+"77
+[; ;PWM_bitbang.c: 77:         if (enc_F){
+[e $ ! _enc_F 68  ]
+{
+"78
+[; ;PWM_bitbang.c: 78:             enc_F = 0;
+[e = _enc_F -> -> 0 `i `b ]
+"79
+[; ;PWM_bitbang.c: 79:             th_l = th_l > 254 ? 254 : th_l;
+[e = _th_l -> ? > -> _th_l `i -> 254 `i : -> 254 `i -> _th_l `i `uc ]
+"80
+[; ;PWM_bitbang.c: 80:             th_l = th_l < 1 ? 1 : th_l;
+[e = _th_l -> ? < -> _th_l `i -> 1 `i : -> 1 `i -> _th_l `i `uc ]
+"81
+[; ;PWM_bitbang.c: 81:             th_l += dir*2-1;
+[e =+ _th_l -> - * -> _dir `i -> 2 `i -> 1 `i `uc ]
+"82
+[; ;PWM_bitbang.c: 82:             th_h = 255-th_l;
+[e = _th_h -> - -> 255 `i -> _th_l `i `uc ]
+"83
+[; ;PWM_bitbang.c: 83:         }
+}
+[e :U 68 ]
+"84
+[; ;PWM_bitbang.c: 84:     }
+}
+[e :U 65 ]
+[e $U 66  ]
+[e :U 67 ]
+"85
+[; ;PWM_bitbang.c: 85:     return (0);
+[e ) -> 0 `i ]
+[e $UE 64  ]
+"86
+[; ;PWM_bitbang.c: 86: }
+[e :UE 64 ]
+}
+"97
+[; ;PWM_bitbang.c: 97: void PWM_setup(){
+[v _PWM_setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _PWM_setup ]
+[f ]
+"99
+[; ;PWM_bitbang.c: 99:     OPTION_REGbits.T0CS = 0;
+[e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
+"100
+[; ;PWM_bitbang.c: 100:     OPTION_REGbits.PSA = 0;
+[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
+"101
+[; ;PWM_bitbang.c: 101:     OPTION_REGbits.PS = 0b010;
+[e = . . _OPTION_REGbits 0 0 -> -> 2 `i `uc ]
+"103
+[; ;PWM_bitbang.c: 103:     INTCONbits.RAIE = 1;
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"104
+[; ;PWM_bitbang.c: 104:     INTCONbits.T0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"105
+[; ;PWM_bitbang.c: 105: }
+[e :UE 69 ]
+}
+"107
+[; ;PWM_bitbang.c: 107: void rotary_setup(){
+[v _rotary_setup `(v ~T0 @X0 1 ef ]
+{
+[e :U _rotary_setup ]
+[f ]
+"109
+[; ;PWM_bitbang.c: 109:     TRISAbits.TRISA2 = 1;
+[e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
+"110
+[; ;PWM_bitbang.c: 110:     TRISCbits.TRISC0 = 1;
+[e = . . _TRISCbits 0 0 -> -> 1 `i `uc ]
+"111
+[; ;PWM_bitbang.c: 111:     IOCAbits.IOCA2 = 1;
+[e = . . _IOCAbits 0 2 -> -> 1 `i `uc ]
+"112
+[; ;PWM_bitbang.c: 112: }
+[e :UE 70 ]
+}
